@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web profile cá nhân">
+    <title>Profile của tôi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .profile-info {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-info h2 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .profile-info p {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #4CAF50;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .projects {
+            flex: 2;
+            max-width: 750px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .projects li {
+            background-color: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects li:hover {
+            background-color: #e0f7fa;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chào mừng đến với Profile của tôi</h1>
+    </header>
+
+    <div class="container">
+        <!-- Thông tin cá nhân -->
+        <div class="profile-info">
+            <img src="https://via.placeholder.com/150" alt="Ảnh đại diện">
+            <h2>Nguyễn Văn A</h2>
+            <p>Chuyên gia phát triển web và ứng dụng. Đam mê công nghệ và sáng tạo.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+
+        <!-- Dự án -->
+        <div class="projects">
+            <h3>Các dự án nổi bật</h3>
+            <ul>
+                <li onclick="window.location.href='https://github.com'">
+                    <h4>Dự án 1: Website bán hàng</h4>
+                    <p>Phát triển một website bán hàng với các tính năng giỏ hàng, thanh toán trực tuyến, và quản lý kho.</p>
+                </li>
+                <li onclick="window.location.href='https://github.com'">
+                    <h4>Dự án 2: Ứng dụng di động</h4>
+                    <p>Ứng dụng di động hỗ trợ người dùng theo dõi sức khỏe với các tính năng như theo dõi chế độ ăn uống và tập luyện.</p>
+                </li>
+                <li onclick="window.location.href='https://github.com'">
+                    <h4>Dự án 3: Hệ thống quản lý khách sạn</h4>
+                    <p>Hệ thống giúp quản lý đặt phòng, thanh toán và dịch vụ khách sạn, cải thiện quy trình làm việc của nhân viên.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Nguyễn Văn A. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
